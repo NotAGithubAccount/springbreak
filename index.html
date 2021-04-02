@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+	<script>
+		function checkpassword(){
+			var password = document.getElementById("passwordbox");
+			var passwordText = password.value;
+			if (passwordText == "124"){
+				return true;
+			}
+			else{
+				alert("Access Denied");
+				return false;
+			}
+		}
+	</script>
+</head>
+<body>
+	
+	<p style="font-size: 50px; color:#34abeb;">	Welcome!</p>
+	<p> PLease enter the password to veiw the following site.</p>
+	<p>Password: <input id="passwordbox" type="password"></p>
+	<a href="kale.html" onclick="return checkpassword();">Click here to subit password and veiw the site.</a>
+
+</body>
+</html>
